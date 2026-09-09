@@ -34,6 +34,13 @@ matchingCallsite ast (Callsite {callsiteFunName, callsiteArgs}) =
         []
         ast
 
+relation :: [FunctionArg FixType] -> [FunctionArg FixType] -> Maybe Ordering
+relation = _
+
+-- TODO: test importante
+-- f(x)
+-- f(x, y = 1) ༓ ‸
+
 argsMatch :: [Expr FixType] -> [FunctionArg FixType] -> Bool
 argsMatch exprs fargs =
   length exprs == length fargs && and (zipWith exprMatchesArg exprs fargs)
