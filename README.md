@@ -1,6 +1,6 @@
 # Crystal overloading analyzer (WIP)
 
-This is a tool for studying overload resolution behavior in Crystal as part of my licenciate thesis. 
+This is a tool for studying overload resolution behavior in [Crystal](https://crystal-lang.org/) as part of my licenciate thesis. 
 
 Crystal allows defining multiple functions with the same name but different signatures. However, in many cases the result of the program depends on the order of the definitions, which is not a desired behaviour. There have been some attempts in the past to formalize and fix how ambiguity is solved but could not satisfy every case. 
 
