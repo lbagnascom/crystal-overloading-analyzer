@@ -74,7 +74,7 @@ Only definitions annotated with `@[Slot]` are reordered, everything else stays i
 
 ## Output
 
-For each input file `<name>.cr`, a directory `<name>/` is created containing:
+For each input file `<name>.cr`, a directory `out/<name>/` is created containing:
 
 - `1.cr`, `2.cr`, … one `.cr` file per permutation of the slots.
 - `result.md` a summary report with exit codes, stdout, and stderr for each permutation, compiled once per crystal opts subset we are interested in.
