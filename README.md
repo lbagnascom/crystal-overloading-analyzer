@@ -1,6 +1,13 @@
-# Crystal overloading rearranger
+# Crystal overloading analyzer (WIP)
 
-A tool for analyzing overload resolution behavior in [Crystal](https://crystal-lang.org/) by generating all permutations of overloaded method definitions and running them through the compiler.
+This is a tool for studying overload resolution behavior in Crystal as part of my licenciate thesis. 
+
+Crystal allows defining multiple functions with the same name but different signatures. However, in many cases the result of the program depends on the order of the definitions, which is not a desired behaviour. There have been some attempts in the past to formalize and fix how ambiguity is solved but could not satisfy every case. 
+
+The project has two components:
+
+1. A permutation generator that produces all possible permutations of overloaded function definitions and runs them to compare the outputs.
+2. (WIP) A static analyzer that parses Crystal (our minimal version of Crystal) code and, for a given callsite, decides if ambiguity exists between the available overloaded functions or returns directly the function that would be called.
 
 ## Prerequisites
 
